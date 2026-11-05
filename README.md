@@ -1,16 +1,56 @@
-# React + Vite
+# Portfolio personal — Diego Anastasio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal de desarrollo web donde presento mis proyectos, habilidades técnicas y experiencia profesional.
 
-Currently, two official plugins are available:
+Desarrollado con especial atención al **frontend, el diseño visual, la interactividad y la experiencia de usuario**, con el objetivo de mostrar mi evolución como desarrollador web y mi interés por el desarrollo full-stack y la inteligencia artificial aplicada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Página principal con presentación profesional, proyectos, habilidades y contacto.
+- Tarjetas de proyectos con vídeos de previsualización y enlaces a GitHub.
+- Páginas individuales con información, funcionalidades y decisiones técnicas de cada proyecto.
+- Explorador interactivo de funcionalidades con capturas y descripciones.
+- Sección de habilidades con categorías, visualización interactiva y experiencias relacionadas.
+- Animaciones personalizadas y diseño responsive.
+- Enlaces profesionales y opción para copiar el correo electrónico.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React:** desarrollo de componentes reutilizables e interfaces interactivas.
+- **JavaScript:** lógica de interacción, animaciones, eventos y gestión del estado.
+- **Tailwind CSS y CSS:** diseño visual, estilos personalizados, animaciones y responsive design.
+- **React Router:** navegación entre la página principal y los detalles de cada proyecto.
+- **Vite:** entorno de desarrollo y generación de la versión de producción.
+- **Git y GitHub:** control de versiones y gestión del repositorio.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Proyectos incluidos
+
+### TrailScope
+
+Aplicación web para descubrir rutas de senderismo y lugares naturales, consultar información y planificar escapadas.
+
+[GitHub](https://github.com/dTasio/trailscope) · [Demo](https://dtasio.github.io/trailscope/)
+
+### JobTrack
+
+Aplicación para gestionar candidaturas laborales, organizar oportunidades y realizar su seguimiento.
+
+[GitHub](https://github.com/dTasio/jobtrack) · [Demo](https://dtasio.github.io/jobtrack/)
+
+### DevShelf
+
+Mini proyecto frontend centrado en HTML, CSS, JavaScript, diseño responsive y filtrado interactivo de proyectos.
+
+[GitHub](https://github.com/dTasio/devshelf) · [Demo](https://dtasio.github.io/devshelf/)
+
+## Diseño y desarrollo
+
+El portfolio está construido mediante componentes reutilizables y datos organizados de forma independiente a la presentación.
+
+Se ha trabajado especialmente en la **jerarquía visual, la tipografía, el diseño responsive, las interacciones y las animaciones personalizadas**, buscando una experiencia consistente tanto en escritorio como en dispositivos móviles.
+
+La inteligencia artificial se ha utilizado como herramienta de apoyo durante el desarrollo, la revisión del código, la depuración y la documentación.
+
+## Estado del proyecto
+
+Portfolio desarrollado como proyecto personal para presentar mis trabajos y continuar ampliándolo con nuevos proyectos y tecnologías.

@@ -1,14 +1,50 @@
+// El orden define las tarjetas, su numeración y la navegación al siguiente proyecto,
+//  slug relaciona cada proyecto con projectDetails.js, skillIds referencia las tecnologías de skills.js,
+// technologies contiene las etiquetas visibles en las tarjetas
 export const projects = [
   {
-    slug: 'trailscope',
-    name: 'TrailScope'
+    slug: "trailscope",
+    name: "TrailScope",
+    category: "React · Aplicación web",
+    description: "Descubre rutas de senderismo, explora mapas, consulta la meteorología y organiza tus escapadas.",
+    technologies: ["React", "Tailwind CSS", "MapLibre", "APIs"],
+    featured: true,
+    accent: "#759AFF",
+    previewColor: "#203A52",
+    image: `${import.meta.env.BASE_URL}images/trailscope.PNG`,
+    githubUrl: "https://github.com/dTasio/trailscope",
+    demoUrl: "https://dtasio.github.io/trailscope/",
+    video: `${import.meta.env.BASE_URL}videos/trailscope-preview.mp4`,
+    skillIds: ["html", "css", "javascript", "react", "react-router", "tailwind", "maplibre", "rest-api", "openstreetmap", "overpass", "open-meteo", "vite", "git", "github"],
   },
   {
-    slug: 'jobtrack',
-    name: 'JobTrack'
+    slug: "jobtrack",
+    name: "JobTrack",
+    category: "JavaScript · Aplicación frontend",
+    description: "Organiza oportunidades profesionales, gestiona candidaturas y realiza un seguimiento de su estado.",
+    technologies: ["JavaScript", "HTML", "CSS", "localStorage"],
+    featured: false,
+    accent: "#FFD239",
+    previewColor: "#383147",
+    image: `${import.meta.env.BASE_URL}images/jobtrack.PNG`,
+    githubUrl: "https://github.com/dTasio/jobtrack",
+    demoUrl: "https://dtasio.github.io/jobtrack/",
+    video: `${import.meta.env.BASE_URL}videos/jobtrack-preview.mp4`,
+    skillIds: ["html", "css", "javascript", "git", "github"],
   },
   {
-    slug: 'devshelf',
-    name: 'DevShelf'
-  }
-]
+    slug: "devshelf",
+    name: "DevShelf",
+    category: "HTML · CSS · JavaScript",
+    description: "Mi primer proyecto web de portfolio, centrado en maquetación responsive e interacción con JavaScript.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    featured: false,
+    accent: "#F35B50",
+    previewColor: "#493044",
+    image: `${import.meta.env.BASE_URL}images/devshelf.PNG`,
+    githubUrl: "https://github.com/dTasio/devshelf",
+    demoUrl: "https://dtasio.github.io/devshelf/",
+    video: `${import.meta.env.BASE_URL}videos/devshelf-preview.mp4`,
+    skillIds: ["html", "css", "javascript", "git", "github"],
+  },
+];

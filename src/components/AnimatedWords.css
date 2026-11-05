@@ -1,0 +1,121 @@
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+.animated-words {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  min-width: 0;
+
+  container-type: inline-size;
+
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+/* ==========================================
+   PALABRAS
+========================================== */
+
+.animated-words__item {
+  position: absolute;
+
+  display: inline-block;
+  width: max-content;
+  max-width: none;
+
+  white-space: nowrap;
+  line-height: 1.15;
+
+  font-size: clamp(2.5rem, 13cqw, 6rem);
+  color: var(--word-color);
+
+  background: transparent;
+  opacity: 0;
+
+  animation: word-appear var(--word-duration) linear both;
+
+  will-change: opacity, transform;
+}
+
+/* ==========================================
+   VARIANTES TIPOGRÁFICAS
+========================================== */
+
+.animated-words__item--display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.animated-words__item--italic {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.04em;
+}
+
+.animated-words__item--mono {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  font-size: clamp(2rem, 10cqw, 5rem);
+  letter-spacing: 0.01em;
+}
+
+/* ==========================================
+   ANIMACIÓN DE ENTRADA Y SALIDA
+========================================== */
+
+@keyframes word-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (min-width: 640px) {
+  .animated-words {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animated-words {
+    height: 480px;
+  }
+}
+
+/* ==========================================
+   ACCESIBILIDAD
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-words__item {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    will-change: auto;
+  }
+}

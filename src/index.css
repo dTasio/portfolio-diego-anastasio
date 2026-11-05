@@ -1,1 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
+
+/* ==========================================
+   TEMA GLOBAL
+========================================== */
+
+@theme {
+  /* Colores principales */
+  --color-base: #10131c;
+  --color-surface: #1b2334;
+  --color-text: #f4f4f1;
+  --color-muted: #b5c0d1;
+  --color-line: #3d4657;
+
+  /* Colores de acento */
+  --color-accent-blue: #759aff;
+  --color-accent-yellow: #ffd239;
+  --color-accent-red: #f35b50;
+
+  /* Tipografías */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ==========================================
+   ESTILOS GLOBALES
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-accent-yellow);
+  color: var(--color-base);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-yellow);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ==========================================
+   MARCO DE VÍDEOS DE PROYECTOS
+========================================== */
+
+.project-video-frame {
+  /* Variables de personalización */
+  --video-border-width: 2px;
+  --video-border-color: #759aff;
+  --video-glow-size: 10px;
+  --video-glow-color: rgba(117, 154, 255, 0.3);
+
+  border: var(--video-border-width) solid var(--video-border-color);
+  box-shadow: 0 0 var(--video-glow-size) var(--video-glow-color);
+  background: transparent;
+
+  transition:
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}

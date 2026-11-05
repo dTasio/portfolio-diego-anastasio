@@ -1,0 +1,22 @@
+
+.feature-swap {
+  animation: feature-appear 350ms ease-out both;
+}
+
+@keyframes feature-appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-swap {
+    animation: none;
+  }
+}

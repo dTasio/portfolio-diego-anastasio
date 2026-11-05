@@ -1,21 +1,29 @@
-import { Link } from "react-router";
-import { projects } from "../data/projects";
+import { useLayoutEffect } from "react";
+import ProjectsSection from "../components/ProjectsSection";
+import SkillsSection from "../components/skills/SkillsSection";
+import ContactSection from "../components/ContactSection";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 function Home() {
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, []);
+
   return (
-    <main className="min-h-screen bg-slate-950 p-8 text-white">
-      <h1 className="mb-8 text-4xl font-bold">Portfolio Diego Anastasio</h1>
+    <div className="min-h-screen bg-base text-text">
+      <Header />
 
-      <h2 className="mb-4 text-2xl">Mis proyectos</h2>
+      <main id="inicio" className="flex flex-col gap-14 md:gap-16 lg:gap-20">
+        <Hero />
+        <ProjectsSection />
+        <SkillsSection />
+        <ContactSection />
+      </main>
 
-      <div className="flex flex-col gap-4">
-        {projects.map((project) => (
-          <Link key={project.slug} to={`/projects/${project.slug}`} className="text-yellow-400 hover:underline">
-            {project.name}
-          </Link>
-        ))}
-      </div>
-    </main>
+      <Footer />
+    </div>
   );
 }
 
